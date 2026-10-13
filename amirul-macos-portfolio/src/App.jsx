@@ -399,6 +399,107 @@ function Projects() {
           </div>
         </div>
 
+        
+{/* PROJECT 3 — PYMERGE */}
+<div className="project-card glass-panel">
+
+<div
+  className="project-preview merge-preview"
+  aria-label="Illustration of PyMerge 2048 game"
+>
+  <div className="merge-window">
+    <div className="merge-topbar">
+      <span className="merge-logo">✦ PyMerge</span>
+      <span className="merge-version">PYTHON GAME</span>
+    </div>
+
+    <div className="merge-heading">
+      <div>
+        <small>THINK. SLIDE. MERGE.</small>
+        <strong>2048<span>.</span></strong>
+      </div>
+
+      <div className="merge-score">
+        <small>SCORE</small>
+        <strong>12,480</strong>
+      </div>
+    </div>
+
+    <div className="merge-board">
+      {[
+        2, 0, 4, 0,
+        0, 8, 16, 0,
+        2, 32, 64, 0,
+        4, 128, 256, 2048
+      ].map((tile, index) => (
+        <div
+          key={index}
+          className={`merge-tile ${tile ? `tile-${tile}` : "tile-empty"}`}
+        >
+          {tile || ""}
+        </div>
+      ))}
+    </div>
+
+    <div className="merge-footer">
+      <span>← ↑ → ↓ to play</span>
+      <strong>BEST 24,500</strong>
+    </div>
+  </div>
+</div>
+
+<div className="project-details">
+  <span className="eyebrow">
+    <span className="eyebrow-dot" />
+    PYTHON-POWERED BROWSER GAME
+  </span>
+
+  <h3>PyMerge — 2048 <span>↗</span></h3>
+
+  <p>
+    A responsive 2048 puzzle game built with Python,
+    HTML and CSS. The Python game logic runs in the
+    browser using Brython. Combine numbered tiles,
+    improve your high score and reach 2048!
+  </p>
+
+  <div className="feature-grid">
+    <span><Check size={15} /> Keyboard & swipe controls</span>
+    <span><Check size={15} /> Undo & restart</span>
+    <span><Check size={15} /> Saved best score</span>
+    <span><Check size={15} /> Responsive game board</span>
+  </div>
+
+  <div className="skill-tags project-tags">
+    <Tag>Python</Tag>
+    <Tag>Brython</Tag>
+    <Tag>HTML5</Tag>
+    <Tag>CSS3</Tag>
+  </div>
+
+  <div className="project-actions">
+    <a
+      href="https://amirullqayyumm.github.io/PyMerge-2048/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="primary-btn"
+    >
+      Play Game <ExternalLink size={16} />
+    </a>
+
+    <a
+      href="https://github.com/amirullqayyumm/PyMerge-2048"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="ghost-btn"
+    >
+      GitHub Repo <Github size={16} />
+    </a>
+  </div>
+</div>
+</div>
+
+
       </div>
     </div>
   );
