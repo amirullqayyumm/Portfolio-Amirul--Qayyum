@@ -143,78 +143,267 @@ function Skills() {
   );
 }
 
+
+
 function Projects() {
   return (
     <div className="page content-page" key="projects">
-      <SectionHeading eyebrow="04 / SELECTED WORK" title="Things I've built." description="One featured full-stack project — built to put what I've learned into practice." />
-      <div className="project-card glass-panel">
-        <div className="project-preview" aria-label="Illustration of an HR management dashboard">
-          <div className="mini-window"><div className="mini-top"><div className="traffic-lights small"><i /><i /><i /></div><span>HRMS Dashboard</span></div>
-            <div className="mini-app"><aside className="mini-sidebar"><div className="mini-logo">HRMS</div><div className="mini-nav selected" /><div className="mini-nav" /><div className="mini-nav short" /><div className="mini-nav" /></aside>
-              <section className="mini-main"><div className="mini-title" /><div className="mini-stats"><div /><div /><div /></div><div className="mini-table"><div /><div /><div /><div /></div></section>
+      <SectionHeading
+        eyebrow="04 / SELECTED WORK"
+        title="Things I've built."
+        description="Projects showcasing my full-stack and frontend development skills."
+      />
+
+      <div style={{ display: "grid", gap: "22px" }}>
+
+        {/* PROJECT 1 — HRMS */}
+        <div className="project-card glass-panel">
+          <div
+            className="project-preview"
+            aria-label="Illustration of an HR management dashboard"
+          >
+            <div className="mini-window">
+              <div className="mini-top">
+                <div className="traffic-lights small">
+                  <i /><i /><i />
+                </div>
+                <span>HRMS Dashboard</span>
+              </div>
+
+              <div className="mini-app">
+                <aside className="mini-sidebar">
+                  <div className="mini-logo">HRMS</div>
+                  <div className="mini-nav selected" />
+                  <div className="mini-nav" />
+                  <div className="mini-nav short" />
+                  <div className="mini-nav" />
+                </aside>
+
+                <section className="mini-main">
+                  <div className="mini-title" />
+                  <div className="mini-stats">
+                    <div /><div /><div />
+                  </div>
+                  <div className="mini-table">
+                    <div /><div /><div /><div />
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-details">
+            <span className="eyebrow">
+              <span className="eyebrow-dot" />
+              FEATURED FULL-STACK PROJECT
+            </span>
+
+            <h3>HR Management System <span>↗</span></h3>
+
+            <p>
+              A full-stack HR platform for managing employees,
+              organizational reporting, leave requests,
+              approvals, attendance, and role-based access.
+            </p>
+
+            <div className="feature-grid">
+              <span><Check size={15} /> Role-based dashboards</span>
+              <span><Check size={15} /> Leave management</span>
+              <span><Check size={15} /> Employee records</span>
+              <span><Check size={15} /> Attendance tracking</span>
+            </div>
+
+            <div className="skill-tags project-tags">
+              <Tag>React</Tag>
+              <Tag>Node.js</Tag>
+              <Tag>Express</Tag>
+              <Tag>Prisma</Tag>
+              <Tag>PostgreSQL</Tag>
+            </div>
+
+            <div className="project-actions">
+              <a
+                href="https://github.com/amirullqayyumm/HR-Management-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-btn"
+              >
+                GitHub Repository <Github size={16} />
+              </a>
             </div>
           </div>
         </div>
-        <div className="project-details">
-          <span className="eyebrow"><span className="eyebrow-dot" /> FEATURED PROJECT</span>
-          <h3>HR Management System <span>↗</span></h3>
-          <p>A full-stack HR platform for managing employees, organizational reporting, leave requests, approvals, attendance, and role-based access.</p>
-          <div className="feature-grid"><span><Check size={15} /> Role-based dashboards</span><span><Check size={15} /> Leave management</span><span><Check size={15} /> Employee records</span><span><Check size={15} /> Attendance tracking</span></div>
-          <div className="skill-tags project-tags"><Tag>React</Tag><Tag>Node.js</Tag><Tag>Express</Tag><Tag>Prisma</Tag><Tag>PostgreSQL</Tag></div>
-          <div className="project-actions"><a href={HRMS} target="_blank" rel="noopener noreferrer" className="primary-btn">GitHub repository <Github size={16} /></a><span className="muted-caption">Repository currently private</span></div>
+
+        {/* PROJECT 2 — APPLYFLOW */}
+        <div className="project-card glass-panel">
+
+          {/* Unique ApplyFlow illustrated preview */}
+          <div
+            className="project-preview flow-preview"
+            aria-label="Illustration of ApplyFlow job application dashboard"
+          >
+            <div className="flow-window">
+              <div className="flow-window-bar">
+                <div className="traffic-lights small">
+                  <i /><i /><i />
+                </div>
+                <span>ApplyFlow — Applications</span>
+              </div>
+
+              <div className="flow-app">
+                <div className="flow-header">
+                  <div className="flow-brand">
+                    <span className="flow-brand-icon">✦</span>
+                    ApplyFlow
+                  </div>
+                  <div className="flow-avatar">AQ</div>
+                </div>
+
+                <div className="flow-headline">
+                  <div>
+                    <strong>Application Tracker</strong>
+                    <small>Your career journey, organized.</small>
+                  </div>
+                  <span className="flow-add-button">+ New</span>
+                </div>
+
+                <div className="flow-stats">
+                  <div>
+                    <small>Applications</small>
+                    <strong>12</strong>
+                  </div>
+                  <div>
+                    <small>Interviews</small>
+                    <strong>04</strong>
+                  </div>
+                  <div>
+                    <small>Offers</small>
+                    <strong>02</strong>
+                  </div>
+                </div>
+
+                <div className="flow-board">
+                  <div className="flow-column">
+                    <div className="flow-column-title">
+                      <span className="flow-dot applied" />
+                      Applied
+                    </div>
+
+                    <div className="flow-job">
+                      <span className="flow-company-logo purple">T</span>
+                      <strong>Frontend Dev</strong>
+                      <small>Tech Company</small>
+                      <span className="flow-job-tag">Remote</span>
+                    </div>
+
+                    <div className="flow-job">
+                      <span className="flow-company-logo blue">D</span>
+                      <strong>UI Developer</strong>
+                      <small>Design Studio</small>
+                    </div>
+                  </div>
+
+                  <div className="flow-column">
+                    <div className="flow-column-title">
+                      <span className="flow-dot interview" />
+                      Interview
+                    </div>
+
+                    <div className="flow-job">
+                      <span className="flow-company-logo orange">S</span>
+                      <strong>Software Eng.</strong>
+                      <small>Software House</small>
+                      <span className="flow-job-tag interview-tag">
+                        Interview
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flow-column">
+                    <div className="flow-column-title">
+                      <span className="flow-dot offer" />
+                      Offer
+                    </div>
+
+                    <div className="flow-job">
+                      <span className="flow-company-logo green">C</span>
+                      <strong>Web Developer</strong>
+                      <small>Creative Agency</small>
+                      <span className="flow-job-tag offer-tag">
+                        Offered!
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flow-bottom-bar">
+                  <span>✦ Keep moving forward</span>
+                  <span className="flow-progress">
+                    <span />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ApplyFlow project information */}
+          <div className="project-details">
+            <span className="eyebrow">
+              <span className="eyebrow-dot" />
+              FRONTEND WEB APPLICATION
+            </span>
+
+            <h3>ApplyFlow <span>↗</span></h3>
+
+            <p>
+              A modern job application tracking application built
+              with React. Organize opportunities using an interactive
+              Kanban board, schedule interviews, monitor application
+              progress, and explore career analytics.
+            </p>
+
+            <div className="feature-grid">
+              <span><Check size={15} /> Kanban job tracking</span>
+              <span><Check size={15} /> Interview scheduling</span>
+              <span><Check size={15} /> Career analytics</span>
+              <span><Check size={15} /> Browser data saving</span>
+            </div>
+
+            <div className="skill-tags project-tags">
+              <Tag>React</Tag>
+              <Tag>JavaScript</Tag>
+              <Tag>Vite</Tag>
+              <Tag>CSS</Tag>
+              <Tag>LocalStorage</Tag>
+            </div>
+
+            <div className="project-actions">
+              <a
+                href="https://amirullqayyumm.github.io/ApplyFlow-Job-Tracker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-btn"
+              >
+                Live Demo <ExternalLink size={16} />
+              </a>
+
+              <a
+                href="https://github.com/amirullqayyumm/ApplyFlow-Job-Tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ghost-btn"
+              >
+                GitHub Repo <Github size={16} />
+              </a>
+            </div>
+          </div>
         </div>
-
-        
-<div className="applyflow-project-card">
-  <div className="applyflow-project-top">
-    <div className="applyflow-project-icon">AF</div>
-    <span className="applyflow-project-status">
-      Live Project
-    </span>
-  </div>
-
-  <h3>ApplyFlow — Job Application Tracker</h3>
-
-  <p>
-    A modern React application for managing job applications,
-    tracking interview progress, organizing opportunities,
-    and viewing career analytics through an interactive
-    dashboard and Kanban board.
-  </p>
-
-  <div className="applyflow-project-tech">
-    <span>React</span>
-    <span>JavaScript</span>
-    <span>Vite</span>
-    <span>CSS</span>
-    <span>LocalStorage</span>
-  </div>
-
-  <div className="applyflow-project-links">
-    <a
-      href="https://amirullqayyumm.github.io/ApplyFlow-Job-Tracker/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="applyflow-live-btn"
-    >
-      ↗ Live Demo
-    </a>
-
-    <a
-      href="https://github.com/amirullqayyumm/ApplyFlow-Job-Tracker"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="applyflow-github-btn"
-    >
-      GitHub Repo ↗
-    </a>
-  </div>
-</div>
 
       </div>
     </div>
   );
 }
+
 
 function Contact() {
   return (
