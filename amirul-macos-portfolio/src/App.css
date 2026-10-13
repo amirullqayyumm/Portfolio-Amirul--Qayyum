@@ -173,3 +173,108 @@
 @media (max-width:820px) { .desktop-main { padding:24px 16px 108px; } .mac-window { height:calc(100dvh - 175px); min-height:510px; } .finder-sidebar { width:72px; padding:24px 9px 14px; } .finder-heading,.finder-nav button span,.sidebar-bottom div:last-child { display:none; } .finder-nav button { justify-content:center; padding:13px; } .sidebar-bottom { justify-content:center; } .home-page { grid-template-columns:1fr; padding:34px 29px; } .home-art { display:none; } .home-copy h1 { font-size:clamp(45px,9vw,75px); } .about-grid { grid-template-columns:1fr; } .about-side { display:grid; grid-template-columns:1fr 1fr; } .project-card { grid-template-columns:1fr; } .project-preview { min-height:200px; } .mini-app { height:125px; } .mini-window { max-width:280px; } .menu-label { display:none; } }
 @media (max-width:570px) { .menu-bar { padding:0 13px; } .menu-left { gap:10px; } .menu-left strong { font-size:11px; } .menu-right { gap:9px; } .menu-clock { font-size:10px; } .desktop-main { padding:15px 9px 102px; } .mac-window { border-radius:14px; height:calc(100dvh - 165px); min-height:450px; } .window-toolbar { padding:0 11px; } .window-title { font-size:10px; } .window-title svg { display:none; } .finder-sidebar { width:53px; padding:19px 4px; } .finder-nav button { padding:12px 7px; } .sidebar-bottom .avatar { height:30px; width:30px; border-radius:9px; } .window-status { padding:0 10px; font-size:9px; } .home-page { padding:40px 21px; } .home-copy h1 { letter-spacing:-2.4px; } .home-role { font-size:11px; } .home-description { font-size:12px; } .content-page { padding:26px 17px 34px; } .about-side,.skills-grid,.contact-links { grid-template-columns:1fr; } .about-story { padding:20px; } .timeline-entry { padding:18px; grid-template-columns:35px 1fr; gap:9px; } .timeline-entry h3 { font-size:15px; } .project-details { padding:21px; } .project-details h3 { font-size:21px; } .feature-grid { grid-template-columns:1fr; gap:8px; } .contact-banner { padding:22px; display:block; } .contact-orb { width:60px; height:60px; border-radius:18px; margin-bottom:22px; } .contact-banner h3 { font-size:21px; } .dock { gap:4px; padding:8px 9px 5px; max-width:calc(100vw - 20px); } .dock-icon { width:39px; height:39px; border-radius:10px; } .dock-icon svg { width:19px; } .dock-separator { margin:0 1px; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
+
+
+/* APPLYFLOW PROJECT CARD */
+
+.applyflow-project-card {
+    padding: 26px;
+    border-radius: 22px;
+    border: 1px solid rgba(160, 160, 180, 0.25);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .applyflow-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  }
+  
+  .applyflow-project-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .applyflow-project-icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #8070ff, #4f46e5);
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  
+  .applyflow-project-status {
+    color: #38a169;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .applyflow-project-card h3 {
+    margin: 0;
+    font-size: 22px;
+    color: inherit;
+  }
+  
+  .applyflow-project-card p {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 14px;
+    color: inherit;
+    opacity: 0.8;
+  }
+  
+  .applyflow-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .applyflow-project-tech span {
+    padding: 6px 11px;
+    border-radius: 20px;
+    background: rgba(125, 110, 255, 0.14);
+    color: inherit;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .applyflow-project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+  }
+  
+  .applyflow-project-links a {
+    padding: 11px 18px;
+    border-radius: 11px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: opacity 0.2s ease;
+  }
+  
+  .applyflow-project-links a:hover {
+    opacity: 0.8;
+  }
+  
+  .applyflow-live-btn {
+    background: #635bff;
+    color: white !important;
+  }
+  
+  .applyflow-github-btn {
+    background: rgba(125, 125, 140, 0.15);
+    color: inherit;
+  }
+  

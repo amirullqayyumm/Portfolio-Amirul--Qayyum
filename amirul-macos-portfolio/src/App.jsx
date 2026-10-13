@@ -163,6 +163,54 @@ function Projects() {
           <div className="skill-tags project-tags"><Tag>React</Tag><Tag>Node.js</Tag><Tag>Express</Tag><Tag>Prisma</Tag><Tag>PostgreSQL</Tag></div>
           <div className="project-actions"><a href={HRMS} target="_blank" rel="noopener noreferrer" className="primary-btn">GitHub repository <Github size={16} /></a><span className="muted-caption">Repository currently private</span></div>
         </div>
+
+        
+<div className="applyflow-project-card">
+  <div className="applyflow-project-top">
+    <div className="applyflow-project-icon">AF</div>
+    <span className="applyflow-project-status">
+      Live Project
+    </span>
+  </div>
+
+  <h3>ApplyFlow — Job Application Tracker</h3>
+
+  <p>
+    A modern React application for managing job applications,
+    tracking interview progress, organizing opportunities,
+    and viewing career analytics through an interactive
+    dashboard and Kanban board.
+  </p>
+
+  <div className="applyflow-project-tech">
+    <span>React</span>
+    <span>JavaScript</span>
+    <span>Vite</span>
+    <span>CSS</span>
+    <span>LocalStorage</span>
+  </div>
+
+  <div className="applyflow-project-links">
+    <a
+      href="https://amirullqayyumm.github.io/ApplyFlow-Job-Tracker/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="applyflow-live-btn"
+    >
+      ↗ Live Demo
+    </a>
+
+    <a
+      href="https://github.com/amirullqayyumm/ApplyFlow-Job-Tracker"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="applyflow-github-btn"
+    >
+      GitHub Repo ↗
+    </a>
+  </div>
+</div>
+
       </div>
     </div>
   );
